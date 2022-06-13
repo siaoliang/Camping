@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="refresh" content="30;url=./">
+<title>登入成功</title>
+	<script>
+		function callHomePage(){
+			//同步請求
+			location.href="./";
+		}
+	</script>
+</head>
+<body>
+	<header>
+		<h2>CAMP <sub>登入成功</sub></h2>
+		<hr>
+	</header>
+	
+	<article>
+		<p><%= c.getName() %>登入成功! <a href="javasript:callHomePage()">首頁</a></p>
+		<img src="">
+	</article>
+</body>
+</html>

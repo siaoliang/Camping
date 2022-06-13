@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CAMP</title>
+<link type="text/css" rel="stylesheet" href="styles/topmenu.css" />
+
+<script type="text/javascript" src="../jquery.js"></script>
+<style>
+	#main > article {
+		width: 250px;
+		border: 1px solid #dcdcdc;
+		background-color: #ffffff;
+		flex-grow: 0.2;
+		margin: 190px auto 0px 10%;
+	}
+	@media screen and (max-width: 500px){
+		#main {
+			flex-direction: column;
+		}
+	}
+	@media screen and (min-width: 400px) and (max-width: 600px){
+		#main > article {
+			display: none;
+		}
+	}
+	
+</style>
+	<script type="text/javascript">
+		$(function(){
+			$("#backTop").click(function(){ 
+				$("html,body").animate({scrollTop:0}, 300);
+			});
+			$(window).scroll(function() {
+				if ( $(this).scrollTop() > 300 ){
+					$("#backTop").fadeIn(300);
+				} else {
+					$("#backTop").stop().fadeOut(300);
+				}
+			}).scroll();
+		});
+								
+	</script>
+</head>
+<body>
+	<header class="head">
+    	<div class="testdiv">
+	  		<div class="ul">
+				<button class="dropdown"><img src="images/member1.png">
+					<div class="dropdown-content">
+						<a href="Login.jsp">會員登入</a><br>
+						<a href="Register.jsp">會員註冊</a>
+					</div>
+				</button>
+				<button class="dropdown"><img src="images/shopping-cart1.png">
+					<div class="dropdown-content">
+						<a href=#>立即結帳</a>
+					</div>
+				</button>
+				<button class="dropdown"><img src="images/loupe1.png">
+					<div class="dropdown-content">
+						<a href=#>產品搜尋</a>
+					</div>
+				</button>
+			</div>
+		</div>
+		<div class="logo">
+			<a href="index.jsp"><img src="images/logo1.png"></a>				
+		</div>
+		<div class="menu up">
+				<a href=#><b>最新優惠</b></a>
+			<div class="dropdown">
+				<a href=#><b>商品分類</b></a>
+				<div type="dropdw" class="dropdown-content">
+					<p><a href="Product.jsp"><b>全部商品</b></a></p>
+					<p><a href=#><b>帳篷系列</b></a></p>
+					<p><a href=#><b>家具系列</b></a></p>
+					<p><a href=#><b>燈具照明</b></a></p>
+					<p><a href=#><b>爐具</b></a></p>
+					<p><a href=#><b>野炊系列</b></a></p>
+					<p><a href=#><b>保冷裝備</b></a></p>
+					<p><a href=#><b>睡眠系列</b></a></p>
+					<p><a href=#><b>咖啡用品</b></a></p>
+				</div>
+			</div>	
+				<a href=#><b>最新消息</b></a>
+			<div class="dropdown">
+				<a href=#><b>常見問題</b></a>
+				<div class="dropdown-content">
+					<p><a href=#><b>購物說明</b></a></p>
+					<p><a href=#><b>售後服務</b></a></p>
+					<p><a href=#><b>客服中心</b></a></p>
+				</div>
+			</div>
+		</div>	
+	</header>
+	    <div id="main">
+	        <nav>
+				
+	        </nav>
+	        <article>
+	        	
+	        </article>
+	    </div>
+	    <button type="button" id="backTop" class="toTop" style="box-shadow: 3px 3px 12px"></button>
+    <footer><b>CAMP @ 2021/12~</b></footer>
+</body>
+</html>

@@ -1,0 +1,260 @@
+@charset "UTF-8";
+
+footer{
+	text-align: center;
+	padding: 10px;
+	background-color: #f5f5f5;
+}
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100px;
+}
+a {
+	text-decoration: none;
+}
+#main {
+	margin: 0px;
+	padding: 0px;
+	display: flex;
+	flex-direction: row; /*column,row*/
+}
+
+header {
+	display: block;
+	background-color: none;
+	z-index: 1;
+}
+
+
+.head{
+	position: fixed;
+	width: 100%;
+	background-color: #ffffff;
+	margin: 0px;
+}
+.testdiv{
+	height: 35px;
+	background-color: #f5f5f5;
+}
+.ul{
+	margin: 0% 10% 0% 72%;
+	list-style: none;
+}
+.ul li a{
+	float: left;
+	padding: 1px 10px;
+	margin: 5px 0px;
+}		
+.logo {
+	text-align: center;
+}
+.menu {
+	padding-bottom: 20px;
+	border-bottom: 3px solid #696969;
+	margin: 0px 15% 20px 15%;
+	text-align: center;
+}
+.up a{
+	padding: 20px 25px;
+}
+
+a:link{color: black;}
+a:visited{color: black;}
+a:hover{color: #a9a9a9;}
+a:active {color: #696969;}
+
+.toTop {
+	width: 3rem;
+	height: 3rem;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	border-radius: 50%;
+	opacity: 0.6;
+	background: #ffffff;
+	cursor: pointer;
+	position:fixed;
+	right: 2.5rem;
+	bottom: 5rem;
+	display: none;
+}
+.toTop::before, .toTop::after {
+	width: 22.5px;
+	height: 5px;
+	border-radius: 3px;
+	background: #000000;
+	position: absolute;
+	content: "";
+}
+.toTop::before {
+	transform: rotate(-45deg) translate(0, -50%);
+	left: 0.5rem;
+	top: 1.3rem;
+}
+.toTop::after {
+	transform: rotate(45deg) translate(0, -50%);
+	right: 0.5rem;
+	top: 1.3rem;
+}
+.toTop:focus {
+	outline: none;
+}
+.dropdown {
+	position: relative;
+  	display: inline-block;
+  	border: none;
+  	padding-top: 5px;
+  	right: 10px;
+  	background-color: rgba(0,0,0,0);
+}
+
+.dropdown-content {
+  	display: none;
+  	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 120px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	padding: 5px 10px;
+	right: 0px; 
+}
+p {
+	margin: 7px 0px;
+	font-size: 15px;
+}
+
+.dropdown-content1 {
+  	display: none;
+  	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 150px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	padding: 5px 0px;
+	right: -20px;
+}
+.ll {
+	padding: 5px 0px;
+	border-bottom: 2px solid #c0c0c0;
+	margin: 0px 10px;
+	list-style-type: none;
+}
+
+.dropdown:hover .dropdown-content {
+  	display: block;
+}
+.dropdown:hover .dropdown-content1 {
+  	display: block;
+}
+.dropdown:hover .dropdown-content-pp {
+  	display: block;
+}
+.ll:hover {
+  	background-color: #696969;
+}
+.item:hover {
+	color: #ffffff;
+}
+
+.welcome {
+	color: #808080;
+	font-weight: bold;
+}
+#cartQ {
+	border-radius: 999em;
+	width: 25px;
+	height: 25px;
+	margin-left: 2px;
+	background-color: #deb887;
+	float: right;
+}
+.cartQty {
+	padding: 2px;
+	font-size: 18px;
+	list-style-type: none;
+}
+#pp {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+#pp td, #pp th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+#pp th {background-color: #f5f5f5;}
+
+.dropdown-content-pp {
+  	display: none;
+  	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 300px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	padding: 5px 10px;
+	right: 0px;
+	z-index: 10;
+}
+#text99 {
+	height: 30px;
+    border: 1px solid #a9a9a9;
+	border-radius: 5px;
+	padding-left: 20px;
+	font-size: 15px;
+}
+#btn99 {
+    margin-top: 5px;
+    border: 1px solid #000000;
+    border-radius: 5px; 
+    color: #ffffff;
+    letter-spacing: 10px;
+    padding-left: 12px;
+    font-size: 15px;
+    font-weight:bold;
+    text-align: center;
+    cursor:pointer;
+}
+.btn99:hover {
+   	background-color: #deb887;
+}
+.btn99 {
+	background-color: #C39D6F;
+}
+
+#foot_img {
+	margin-left: 47%;
+}
+#footer_img1 {
+	background: url("../camp/images/fb1.png");
+	display: block;
+	width: 30px;
+	height: 30px;
+	float: left;
+}
+#footer_img2 {
+	background: url("../camp/images/ig1.png");
+	display: block;
+	width: 30px;
+	height: 30px;
+	float: left;
+	margin-left: 10px;
+}
+#footer_img3 {
+	background: url("../camp/images/youtube1.png");
+	display: block;
+	width: 30px;
+	height: 30px;
+	float: left;
+	margin-left: 10px;
+}
+#footer_img1:hover {
+	background: url("../camp/images/fb.png");
+	
+}
+#footer_img2:hover {
+	background: url("../camp/images/ig.png");
+	
+}
+#footer_img3:hover {
+	background: url("../camp/images/youtube.png");
+	
+}
